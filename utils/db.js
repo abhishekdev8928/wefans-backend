@@ -10,7 +10,7 @@ const connectDB = async () => {
 
         console.log(URI);
 
-       await mongoose.connect(URI);
+       await mongoose.connect("mongodb+srv://wefans:wefans%40123@cluster0.ztg1e4d.mongodb.net/wefans");
        console.log('connection successful to DB');
         
     } catch (error) {
