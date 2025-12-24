@@ -8,6 +8,8 @@ const URI =process.env.DB_URL;
 const connectDB = async () => {
     try {
 
+        console.log(URI);
+
        await mongoose.connect(URI);
        console.log('connection successful to DB');
         
