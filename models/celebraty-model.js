@@ -1,0 +1,28 @@
+const { Schema, model } = require("mongoose");
+
+//Fixed item master
+const celebratySchema = new Schema({
+  name: { type: String, required: true },
+  slug: { type: String, required: true },
+  shortinfo: { type: String, required: true },
+  statusnew: { type: String, required: true },
+  professions: { type: String },
+    languages: { type: String },
+
+  biography: { type: String, required: true },
+  image: {
+    type: String,
+   
+  },
+   gallery: [String], // ✅ new field for multiple gallery images
+   createdBy: { type: String }, // 👈 optional if you're adding manually
+   updatedAt: { type: String }, // 👈 optional if you're adding manually
+
+   
+  url: { type: String },
+  status: { type: String },
+  createdAt: { type: String }, // 👈 optional if you're adding manually
+}); // 👈 Adds createdAt and updatedAt automatically
+const Celebraty = new model("celebraty", celebratySchema);
+
+module.exports = { Celebraty };
