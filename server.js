@@ -32,7 +32,7 @@ const errorMiddleware1 = require("./middlewares/error-middleware");
 
 
 const corsOptions = {
-  origin: 'https://wefans-front-8g50ta44k-rajashri-chougules-projects.vercel.app',
+  origin: 'https://wefans-front.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   credentials: true,
 };
